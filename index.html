@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranjal Raj Portfolio</title>
+    <meta name="description"
+        content="A premium software developer portfolio showcasing modern web development aesthetics.">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!-- Component Scripts -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.36/build/spline-viewer.js"></script>
+</head>
+
+<body>
+    <!-- Splash Screen Overlay -->
+    <div id="splash-overlay" class="splash-overlay">
+        <canvas id="splash-canvas"></canvas>
+        <p class="splash-hint">Loading experience...</p>
+    </div>
+
+    <!-- 3D Spline Background (outside wrapper to preserve position:fixed) -->
+    <div class="spline-bg-container">
+        <spline-viewer url="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+            events-target="global"></spline-viewer>
+    </div>
+
+    <div class="glow-bg glow-1"></div>
+    <div class="glow-bg glow-2"></div>
+
+    <!-- All Portfolio Content -->
+    <div class="portfolio-content">
+
+        <header class="navbar">
+            <div class="container nav-container">
+                <a href="#" class="logo">Pranjal Raj</a>
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#experience" class="nav-link">Experience</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <!-- Theme Toggle -->
+                        <div class="theme-toggle" id="theme-toggle" role="button" tabindex="0"
+                            aria-label="Toggle theme">
+                            <div class="toggle-track">
+                                <div class="toggle-handle">
+                                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                                    </svg>
+                                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="4" />
+                                        <path d="M12 2v2" />
+                                        <path d="M12 20v2" />
+                                        <path d="m4.93 4.93 1.41 1.41" />
+                                        <path d="m17.66 17.66 1.41 1.41" />
+                                        <path d="M2 12h2" />
+                                        <path d="M20 12h2" />
+                                        <path d="m6.34 17.66-1.41 1.41" />
+                                        <path d="m19.07 4.93-1.41 1.41" />
+                                    </svg>
+                                </div>
+                                <div class="toggle-icons">
+                                    <svg class="icon-sun-bg" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="4" />
+                                        <path d="M12 2v2" />
+                                        <path d="M12 20v2" />
+                                        <path d="m4.93 4.93 1.41 1.41" />
+                                        <path d="m17.66 17.66 1.41 1.41" />
+                                        <path d="M2 12h2" />
+                                        <path d="M20 12h2" />
+                                        <path d="m6.34 17.66-1.41 1.41" />
+                                        <path d="m19.07 4.93-1.41 1.41" />
+                                    </svg>
+                                    <svg class="icon-moon-bg" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="./resume.pdf" target="_blank" class="animated-button">
+                            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                                </path>
+                            </svg>
+                            <span class="text">Resume</span>
+                            <span class="circle"></span>
+                            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                                </path>
+                            </svg>
+                        </a>
+                        <div class="nav-profile" id="profile-btn" role="button" tabindex="0"
+                            aria-label="View profile info">
+                            <img src="./mypicc.jpg" alt="Profile avatar" class="profile-img">
+                        </div>
+
+                        <!-- Profile Popup Card -->
+                        <div class="profile-popup" id="profile-popup">
+                            <div class="profile-popup-card">
+                                <button class="popup-close" id="popup-close" aria-label="Close">&times;</button>
+                                <div class="popup-avatar">
+                                    <img src="./mypicc.jpg" alt="Pranjal Raj" class="popup-avatar-img">
+                                </div>
+                                <h3 class="popup-name">Pranjal Raj</h3>
+                                <p class="popup-role">Software Developer</p>
+                                <div class="popup-divider"></div>
+                                <ul class="popup-links">
+                                    <li>
+                                        <a href="mailto:raj.pranjal.999@gmail.com" class="popup-link">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <rect width="20" height="16" x="2" y="4" rx="2" />
+                                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                            </svg>
+                                            <span>raj.pranjal.999@gmail.com</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+917830550771" class="popup-link">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <path
+                                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                                            </svg>
+                                            <span>+91 78305 50771</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/pranjal-raj" target="_blank"
+                                            rel="noopener noreferrer" class="popup-link">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                                <path
+                                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                            </svg>
+                                            <span>LinkedIn</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/pranjal__raj" target="_blank"
+                                            rel="noopener noreferrer" class="popup-link">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                                            </svg>
+                                            <span>Instagram</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/pranjalraj" target="_blank"
+                                            rel="noopener noreferrer" class="popup-link">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                                <path
+                                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                            </svg>
+                                            <span>GitHub</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="section hero">
+                <div class="container hero-container">
+                    <div class="hero-content reveal">
+                        <p class="hero-subtitle">Hi, I'm a</p>
+                        <h1 class="hero-title">Software Developer</h1>
+                        <h2 class="hero-tagline shine-text">Crafting beautiful digital experiences.</h2>
+                        <p class="hero-desc">
+                            I specialize in building high-quality, performant, and scalable web applications with
+                            exceptionally premium designs and modern aesthetics.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">View My Work</a>
+                            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="hero-image-showcase reveal">
+                        <div class="hero-image-wrapper">
+                            <!-- Pranjal's Main App Portrait -->
+                            <img src="./mypicc.jpg" alt="Pranjal Raj Profile" class="hero-img-large">
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <p>Scroll Down</p>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section about">
+                <div class="container">
+                    <h2 class="section-title reveal"><span class="text-accent">01.</span> About Me</h2>
+                    <div class="about-content reveal">
+                        <div class="about-text">
+                            <p>Hello! My name is Pranjal Raj, a passionate software engineer focused on building robust,
+                                scalable applications and premium digital experiences. I specialize in full-stack
+                                development, utilizing the MERN stack (MongoDB, Express.js, React, Node.js) and Spring
+                                Boot
+                                alongside core programming languages like Java, C++, and Python to deliver structured
+                                solutions.</p>
+                            <p>My technical journey is driven by a strong foundation in Data Structures and Algorithms
+                                (DSA), cloud infrastructure architecture through AWS, and competitive problem-solving in
+                                renowned hackathons such as OpenCode and SENSE HACK. Most recently, at LaunchEd Global,
+                                I
+                                architected data communication workflows and directly interfaced with organizational
+                                databases, bridging the gap between complex engineering backend systems and user-facing
+                                educational products.</p>
+                        </div>
+                        <div class="about-img-wrapper">
+                            <div class="about-img-placeholder glow-box">
+                                <!-- Image intentionally left blank for styling purposes -->
+                                <div class="placeholder-icon">{'</>'}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="section experience">
+                <div class="container">
+                    <h2 class="section-title reveal"><span class="text-accent">02.</span> Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-panel">
+                                <div class="timeline-header-image">
+                                    <svg class="domain-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M20 7h-4v-2c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v2h-4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-10c0-1.103-.897-2-2-2zm-10-2h4v2h-4v-2zm10 14h-16v-10h16v10z" />
+                                    </svg>
+                                </div>
+                                <h3 class="timeline-role">Virtual Front End Intern</h3>
+                                <h4 class="timeline-company">Commonwealth Bank</h4>
+                                <span class="timeline-date">May 10, 2026 – May 16, 2026 | Remote</span>
+                                <ul class="timeline-desc">
+                                    <li>Completed front-end development tasks in HTML and CSS to build responsive web components.</li>
+                                    <li>Designed and implemented a 'Tips for Financial Cybersecurity' webpage, enhancing user accessibility and information presentation.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-panel">
+                                <div class="timeline-header-image">
+                                    <svg class="domain-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M20 7h-4v-2c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v2h-4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-10c0-1.103-.897-2-2-2zm-10-2h4v2h-4v-2zm10 14h-16v-10h16v10z" />
+                                    </svg>
+                                </div>
+                                <h3 class="timeline-role">Frontend Developer Intern</h3>
+                                <h4 class="timeline-company">Kinsuk</h4>
+                                <span class="timeline-date">April 2026 – May 2026</span>
+                                <ul class="timeline-desc">
+                                    <li>Designed and developed the full-stack website for the startup, enhancing brand presence and user engagement.</li>
+                                    <li>Contributed to startup scaling by securing additional grants through effective project presentation and technical documentation.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section skills">
+                <div class="container">
+                    <h2 class="section-title reveal"><span class="text-accent">03.</span> Skills & Arsenal</h2>
+                    <div class="skills-container">
+                        <div class="skill-category glass-panel reveal">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
+                                </svg>
+                            </div>
+                            <h3 class="skill-title">Programming</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">C++</span> <span class="skill-tag">Java</span> <span
+                                    class="skill-tag">Python</span>
+                                <span class="skill-tag">HTML</span> <span class="skill-tag">CSS</span> <span
+                                    class="skill-tag">Assembly</span>
+                                <span class="skill-tag">R Language</span>
+                            </div>
+                        </div>
+                        <div class="skill-category glass-panel reveal">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" />
+                                </svg>
+                            </div>
+                            <h3 class="skill-title">Libraries & Frameworks</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">JavaScript</span> <span class="skill-tag">React</span> <span
+                                    class="skill-tag">Bootstrap</span>
+                                <span class="skill-tag">MongoDB</span> <span class="skill-tag">ExpressJS</span> <span
+                                    class="skill-tag">NodeJS</span>
+                                <span class="skill-tag">SpringBoot</span>
+                            </div>
+                        </div>
+                        <div class="skill-category glass-panel reveal">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.1L9 6 6 9 1.8 4.7C.5 7.1.9 10 2.9 12c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.3z" />
+                                </svg>
+                            </div>
+                            <h3 class="skill-title">Tools & Platforms</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">uVision5</span> <span class="skill-tag">Matlab</span> <span
+                                    class="skill-tag">Code Composer Studio</span>
+                                <span class="skill-tag">Eclipse</span> <span class="skill-tag">Git Hub</span> <span
+                                    class="skill-tag">VS Code</span>
+                            </div>
+                        </div>
+                        <div class="skill-category glass-panel reveal">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2C6.48 2 2 4.69 2 8v8c0 3.31 4.48 6 10 6s10-2.69 10-6V8c0-3.31-4.48-6-10-6zm0 4c4.66 0 8 1.66 8 4s-3.34 4-8 4-8-1.66-8-4 3.34-4 8-4zm0 14c-4.43 0-7.85-1.55-7.98-3.77A9.873 9.873 0 0 0 12 18c2.97 0 5.61-.63 7.98-1.77C19.85 18.45 16.43 20 12 20z" />
+                                </svg>
+                            </div>
+                            <h3 class="skill-title">Databases</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achievements Section -->
+            <section id="achievements" class="section achievements">
+                <div class="container">
+                    <h2 class="section-title reveal"><span class="text-accent">04.</span> Certifications & Hackathons
+                    </h2>
+                    <div class="achievements-grid">
+                        <div class="achievement-col">
+                            <h3 class="col-title reveal">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 15.2l-3.5 2.1.9-3.9-3-2.6 4-.3 1.6-3.6 1.6 3.6 4 .3-3 2.6.9 3.9z" />
+                                    <path
+                                        d="M2 10a10 10 0 1 0 10-10 10.011 10.011 0 0 0-10 10zm18 0a8 8 0 1 1-8-8 8.009 8.009 0 0 1 8 8z" />
+                                </svg>
+                                Certifications
+                            </h3>
+                            <div class="ach-list">
+                                <div class="ach-card glass-panel reveal">
+                                    <h4>DSA with JAVA (Delta Batch)</h4>
+                                    <p>APNA COLLEGE</p>
+                                </div>
+                                <div class="ach-card glass-panel reveal">
+                                    <h4>MERN Fullstack Program</h4>
+                                    <p>APNA COLLEGE</p>
+                                </div>
+                                <div class="ach-card glass-panel reveal">
+                                    <h4>Amazon Web Services Program</h4>
+                                    <p>UDEMY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="achievement-col">
+                            <h3 class="col-title reveal">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM12 3c1.65 0 3 1.35 3 3H9c0-1.65 1.35-3 3-3z" />
+                                </svg>
+                                Hackathons
+                            </h3>
+                            <div class="ach-list">
+                                <div class="ach-card glass-panel reveal">
+                                    <h4>OpenCode 2026</h4>
+                                    <p>Indian Institute of Information Technology, Allahabad</p>
+                                </div>
+                                <div class="ach-card glass-panel reveal">
+                                    <h4>SENSE HACK 2025</h4>
+                                    <p>Vellore Institute of Technology, Vellore</p>
+                                </div>
+                                <div class="ach-card glass-panel reveal">
+                                    <h4>Designathon 2024</h4>
+                                    <p>Vellore Institute of Technology, Vellore</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section projects">
+                <div class="container">
+                    <h2 class="section-title reveal"><span class="text-accent">05.</span> Selected Projects</h2>
+                    <div class="projects-grid">
+
+                        <!-- Project 1 -->
+                        <div class="project-card glass-panel reveal">
+                            <div class="project-img-wrapper">
+                                <img src="./panchayat-1.jpeg" alt="Panchayat Portal" class="project-img">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Panchayat Portal</h3>
+                                <p class="project-desc">A full-stack SaaS cooperative housing management platform featuring multi-tenant management, role-based access control, and a complaint & grievance system. Includes real-time notifications, service requests, an SOS alert system with geolocation, secure payments, and an AI-powered Rules Assistant (Gemini API) built as a mobile-responsive PWA and native Android APK.</p>
+                                <ul class="project-tech">
+                                    <li>React</li>
+                                    <li>Node.js</li>
+                                    <li>TypeScript</li>
+                                    <li>Capacitor</li>
+                                    <li>Gemini API</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/prnjl-rj/Panchayat-Portal" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="project-card glass-panel reveal">
+                            <div class="project-img-wrapper">
+                                <img src="./smart-waste-system.png" alt="Smart Waste System" class="project-img">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">IntelliBin</h3>
+                                <p class="project-desc">Built an IoT-based system using ESP32, Arduino IDE, Firebase, and a real-time web dashboard. Integrated ultrasonic, gas, temperature, moisture, GPS, and cooling modules to monitor bin fill levels and hazardous gases. Developed real-time sensor communication via HTTP APIs and Firebase for live dashboard updates, smart alerts, and optimized waste collection management.</p>
+                                <ul class="project-tech">
+                                    <li>ESP32</li>
+                                    <li>Firebase</li>
+                                    <li>IoT</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/prnjl-rj/IntelliBin" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section contact">
+                <div class="container contact-container reveal">
+                    <h2 class="section-title text-center"><span class="text-accent">06.</span> What's Next?</h2>
+                    <h3 class="contact-title">Get In Touch</h3>
+                    <p class="contact-desc">
+                        Although I'm not currently looking for any new opportunities, my inbox is always open. Whether
+                        you
+                        have a question or just want to say hi, I'll try my best to get back to you!
+                    </p>
+                    <a href="https://wa.me/917830550771?text=Hello" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary contact-btn">Say Hello</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>Architected & Engineered by Pranjal Raj</p>
+                <div class="social-links">
+                    <a href="https://github.com/prnjlrj" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pranjal-raj-71b9b624a/" target="_blank"
+                        rel="noopener noreferrer" class="social-link">
+                        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/prnj.lrj_ofcl/" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
+                        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="mailto:raj.pranjal.999@gmail.com" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
+                        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.77l5.504-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </div><!-- End .portfolio-content -->
+
+    <script src="./script.js"></script>
+    <script src="./particle-splash.js"></script>
+</body>
+
+</html>
