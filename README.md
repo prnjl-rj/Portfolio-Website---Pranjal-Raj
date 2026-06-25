@@ -6,7 +6,7 @@ A modern, responsive, and interactive portfolio website showcasing my projects, 
 
 ## 🌐 Live Demo
 
-**Portfolio:** *(https://heroic-stardust-148f66.netlify.app/)*
+**Portfolio:** *https://heroic-stardust-148f66.netlify.app/*
 
 # ✨ Features
 
