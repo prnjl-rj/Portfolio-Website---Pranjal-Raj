@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 215 45% 96%;
+    --foreground: 235 35% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 235 35% 10%;
+    --primary: 268 85% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 332 82% 56%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 25% 90%;
+    --muted-foreground: 230 18% 30%;
+    --accent: 192 91% 40%;
+    --accent-foreground: 0 0% 100%;
+    --border: 220 20% 82%;
+    --input: 220 20% 82%;
+    --ring: 268 85% 56%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 245 42% 4%;
+    --foreground: 240 20% 98%;
+    --card: 245 36% 7%;
+    --card-foreground: 240 20% 98%;
+    --primary: 268 92% 65%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 334 88% 62%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 245 28% 12%;
+    --muted-foreground: 240 12% 68%;
+    --accent: 190 95% 52%;
+    --accent-foreground: 245 42% 4%;
+    --border: 245 25% 18%;
+    --input: 245 25% 18%;
+    --ring: 268 92% 65%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom 3D & Authentic Glassmorphism Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-1400 {
+  perspective: 1400px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Primary Glassmorphism Card Surface (All Section Boxes) */
+.glass-surface {
+  background: linear-gradient(
+    135deg,
+    rgba(22, 19, 46, 0.50) 0%,
+    rgba(13, 12, 30, 0.34) 100%
+  );
+  backdrop-filter: blur(22px) saturate(180%);
+  -webkit-backdrop-filter: blur(22px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 20px 50px -12px rgba(0, 0, 0, 0.55),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+html:not(.dark) .glass-surface {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.38) 0%,
+    rgba(255, 255, 255, 0.20) 100%
+  );
+  backdrop-filter: blur(22px) saturate(190%);
+  -webkit-backdrop-filter: blur(22px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.68);
+  box-shadow:
+    0 18px 45px -12px rgba(15, 23, 42, 0.14),
+    inset 0 1px 2px 0 rgba(255, 255, 255, 0.85);
+}
+
+/* Nested Inner Glass Boxes (Metrics, Channels, Coursework, Form Inputs) */
+.glass-subcard {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.09) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 6px 20px -6px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
+}
+
+html:not(.dark) .glass-subcard {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.48) 0%,
+    rgba(255, 255, 255, 0.26) 100%
+  );
+  backdrop-filter: blur(16px) saturate(170%);
+  -webkit-backdrop-filter: blur(16px) saturate(170%);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow:
+    0 6px 20px -6px rgba(15, 23, 42, 0.08),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.text-gradient-aurora {
+  background: linear-gradient(135deg, #c084fc 0%, #f472b6 45%, #38bdf8 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 6s ease infinite;
+}
+
+html:not(.dark) .text-gradient-aurora {
+  background: linear-gradient(135deg, #6d28d9 0%, #db2777 50%, #0284c7 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 6s ease infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 10, 22, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(168, 85, 247, 0.5), rgba(236, 72, 153, 0.5));
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(168, 85, 247, 0.8), rgba(236, 72, 153, 0.8));
+}
