@@ -30,13 +30,13 @@ export function HeroSection({ profile, onTriggerBoop, setInteractiveOrbit }) {
     >
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
-          {/* Left Column: Hero Glassmorphism Box */}
+          {/* Left Column: Hero Headline & Actions (Open layout without outer box) */}
           <motion.div
             style={{ y: yHeroText, opacity: opacityHero }}
             initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="lg:col-span-7 glass-surface rounded-3xl p-6 sm:p-9 space-y-6"
+            className="lg:col-span-7 space-y-6"
           >
             <div className="flex flex-wrap items-center gap-2.5">
               <Badge variant="secondary" className="px-3.5 py-1 text-xs">
